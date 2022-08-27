@@ -1,0 +1,11 @@
+MODEL:
+  PY: models
+  CLASS: EffNet
+  ARGS:
+    arch_name: "efficientnet-b0"
+    num_classes: 15
+  CHECKPOINT: best_model.pt
+
+TEST:
+  FILE: /home/zhuldyzzhan/research/human_activities/data/Testing_set.csv
+  DIR: /home/zhuldyzzhan/research/human_activities/data/test

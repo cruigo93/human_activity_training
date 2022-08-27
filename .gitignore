@@ -2,3 +2,5 @@ data
 *.pt
 logs/
 *.csv
+src/*.pt
+notebooks/.ipynb_checkpoints/

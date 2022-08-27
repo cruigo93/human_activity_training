@@ -23,7 +23,6 @@ class HumanDataset:
         item = self.items[idx]
         image = cv2.imread(os.path.join(self.image_dir, item["filename"]), 1)
         image = self.transforms(image=image)["image"]
-        # label = torch.tensor(np.array([item["label"]]))
         if self.is_testing:
             label = CLASSES.index(item["label"])
             label_encoding = [0 for _ in range(len(CLASSES))]
